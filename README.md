@@ -83,6 +83,16 @@ A toggle is utilized to force CloudFormation to re-evaluate a resource during th
   "Description" : "Time interval between auto stack updates",
   "Type" : "String",
   "Default" : "5 minutes"
+},
+"AutoUpdateAmi" : {
+   "Description" : "Always check for latest AMI using the provided search string during stack updates",
+   "Type" : "String",
+   "Default" : "YES",
+   "AllowedValues" :
+      [
+        "YES",
+        "NO"
+      ]
 }
 ```
 #### CloudFormation template required Resources:
